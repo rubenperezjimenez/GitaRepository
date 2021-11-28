@@ -1,0 +1,54 @@
+.footerContainer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(196, 215, 233);
+    border: black solid 10px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-template-rows: 2fr 2fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+        "email social languages about"
+        /* No es correcto que un mismo elemento ocupe todas las columnas de una misma fila, a menos que ocupe otra columna en otra fila generando una forma de L */
+        "copyRight copyRight copyRight copyRight";
+
+    /*justify-items: center;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;*/
+}
+
+.Item {
+    border: black solid 10px;
+    background-color:white;
+}
+
+.ItemEmail {
+    border: black solid 10px;
+    grid-area: email;
+}
+
+.ItemAboutUs {
+    border: black solid 10px;
+    grid-area: about;
+}
+
+.ItemSocial {
+    border: black solid 10px;
+    
+    grid-area: social;
+}
+
+.ItemCopyright {
+    border: black solid 10px;
+    grid-area: copyRight;
+    background-color:red;
+}
+
+.ItemLanguages {
+    border: black solid 10px;
+
+    grid-area: languages;
+}
