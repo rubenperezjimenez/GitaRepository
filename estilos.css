@@ -3,23 +3,6 @@ body {
     
 }
 
-.footerContainer {
-    position: fixed;
-    /*padding: 10px 10px 10px 10px;*/
-    bottom: 0;
-    right:0;
-    width: 100%;    
-    border-top: black solid 1px; 
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: 3fr 3fr;
-    column-gap: 0px;
-    row-gap: 0px;
-    grid-template-areas:
-        "email social languages about"
-        "copyRight copyRight copyRight copyRight";
-}
-
 .header {
     position: fixed;
     width: 100%;
@@ -76,6 +59,23 @@ body {
     
 }
 */
+.footerContainer {
+    position: fixed;
+    /*padding: 10px 10px 10px 10px;*/
+    bottom: 0;
+    right:0;
+    width: 100%;    
+    border-top: black solid 1px; 
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 3fr 3fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    grid-template-areas:
+        "email social languages about"
+        "copyRight copyRight copyRight copyRight";
+}
+
 .box {
     border: white solid 0px;
     display:flex;
@@ -104,4 +104,36 @@ body {
 .Languages {
     display:grid;    
     grid-area: languages;
+}
+
+.Principal {
+    display: grid;
+    border:solid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;    
+    height:70vh;
+    grid-template-areas: "izquierda derecha";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    justify-content: center;
+    align-content: center;
+
+    
+}
+.Izquierda{
+    border:solid;
+    justify-items: center;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
+
+    grid-area: izquierda;
+}
+
+.Derecha{
+    border:solid;
+    grid-area: derecha;
 }
