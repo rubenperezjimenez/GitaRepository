@@ -1,13 +1,30 @@
+.body {
+    font-family: 'Prompt', sans-serif;
+}
+
+.header{
+    font-family: 'Prompt', sans-serif; 
+}
+
+.footer{
+    font-family: 'Prompt', sans-serif; 
+}
 .footerContainer {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(196, 215, 233);
-    border: black solid 10px;
+    position: fixed;
+    /*padding: 10px 10px 10px 10px;*/
+    bottom: 0;
+    right:0;
+    width: 95%;
+    
+
+
+    width: 100%;    
+    border-top: black solid 1px; 
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr 4fr;
-    grid-template-rows: 2fr 2fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 3fr 3fr;
+    column-gap: 0px;
+    row-gap: 0px;
     grid-template-areas:
         "email social languages about"
         /* No es correcto que un mismo elemento ocupe todas las columnas de una misma fila, a menos que ocupe otra columna en otra fila generando una forma de L */
@@ -18,37 +35,35 @@
 
     justify-content: center;
     align-content: center;*/
+    
 }
 
-.Item {
-    border: black solid 10px;
-    background-color:white;
+.box {
+    border: white solid 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.ItemEmail {
-    border: black solid 10px;
+.Email {
     grid-area: email;
 }
 
-.ItemAboutUs {
-    border: black solid 10px;
+.AboutUs {
     grid-area: about;
 }
 
-.ItemSocial {
-    border: black solid 10px;
-    
+.Social {
     grid-area: social;
+    justify-content:space-evenly;
 }
 
-.ItemCopyright {
-    border: black solid 10px;
+.Copyright {
     grid-area: copyRight;
-    background-color:red;
+        
 }
 
-.ItemLanguages {
-    border: black solid 10px;
-
+.Languages {
+    display:grid;
     grid-area: languages;
 }
