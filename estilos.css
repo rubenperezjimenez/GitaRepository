@@ -1,23 +1,13 @@
-.body {
+body {
     font-family: 'Prompt', sans-serif;
+    
 }
 
-.header{
-    font-family: 'Prompt', sans-serif; 
-}
-
-.footer{
-    font-family: 'Prompt', sans-serif; 
-}
 .footerContainer {
     position: fixed;
     /*padding: 10px 10px 10px 10px;*/
     bottom: 0;
     right:0;
-    width: 95%;
-    
-
-
     width: 100%;    
     border-top: black solid 1px; 
     display: grid;
@@ -27,17 +17,65 @@
     row-gap: 0px;
     grid-template-areas:
         "email social languages about"
-        /* No es correcto que un mismo elemento ocupe todas las columnas de una misma fila, a menos que ocupe otra columna en otra fila generando una forma de L */
         "copyRight copyRight copyRight copyRight";
+}
 
-    /*justify-items: center;
+.header {
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-
-    justify-content: center;
-    align-content: center;*/
     
 }
 
+.headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo img {
+    width: 150px;
+    /*filter: invert(50);*/
+   
+}
+.headerMenu {
+    width: 100%;
+    border-bottom: black solid 1px;
+    
+}
+
+.headerMenu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style:none;
+    margin: 0;
+}
+
+.headerMenu ul li {
+    display: inline-block;
+    padding: 0px 20px 0px 20px ;
+    
+}
+/*.headerContainer {
+    position: fixed;
+    /*padding: 10px 10px 10px 10px;* /
+    top: 0;
+    right:0;
+    width: 100%;    
+    border-bottom: black solid 1px; 
+    display: grid;
+    grid-template-columns: repeat (6, 1fr);
+    /*grid-template-rows: 3fr 3fr; * /
+    column-gap: 0px;
+    row-gap: 0px;
+    grid-template-areas:
+        "email social languages about"
+        /* No es correcto que un mismo elemento ocupe todas las columnas de una misma fila, a menos que ocupe otra columna en otra fila generando una forma de L * /
+    
+}
+*/
 .box {
     border: white solid 0px;
     display:flex;
@@ -64,6 +102,6 @@
 }
 
 .Languages {
-    display:grid;
+    display:grid;    
     grid-area: languages;
 }
