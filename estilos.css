@@ -108,7 +108,7 @@ body {
 
 .Principal {
     display: grid;
-    border:solid;
+    /*border:solid;*/
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;    
     height:70vh;
@@ -123,7 +123,7 @@ body {
     
 }
 .Izquierda{
-    border:solid;
+    /*border:solid;*/
     justify-items: center;
     align-items: center;
 
@@ -134,6 +134,6 @@ body {
 }
 
 .Derecha{
-    border:solid;
+    /*border:solid;*/
     grid-area: derecha;
 }
