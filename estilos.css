@@ -1,12 +1,38 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Cpm border-box, los valores en porcentaje tienen en cuenta
+    el margin y padding para hacer el calculo. Si no, calculan
+    el ancho total MAS estas dos propiedades generando contenedores
+    mas anchos de lo que queremos. */
+    box-sizing: border-box;
+}
+
 html {
     height:100%;
 }
 
 body {
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Prompt', sans-serif;    
     margin: 0px;
     padding: 0;
     height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.indu {
+    position:fixed;    
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn-static.findly.com/wp-content/uploads/sites/566/2017/11/Diwali.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
 .headerLogo {
@@ -24,16 +50,16 @@ body {
 }
 
 .headerMenu ul {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     list-style:none;
     margin: 0;
 }
 
 .headerMenu ul li {
-    display: inline-block;
-    padding: 0px 20px 0px 20px ;
-    
+    display: inline-flex;
+    padding: 0px 20px 0px 20px ;  
+    list-style: none;      
 }
 /*.headerContainer {
     position: fixed;
@@ -100,35 +126,31 @@ body {
 .Principal {
     display: grid;
     /*border:solid;*/
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 2fr 4fr;
     /*grid-template-rows: fit-content(8rem);   */
     grid-template-areas: "izquierda derecha";
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-
-    justify-content: center;
-    align-content: center;
-
-    
+    text-align: center;    
+   
 }
 .Izquierda{
     /*border:solid;*/
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     border:solid;
     grid-area: izquierda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Derecha{
     /*border:solid;*/
     grid-area: derecha;
-    object-fit: cover;
-    width: 100%;
     border:solid;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
+
 .main-body{
     display: grid;
     /* let content auto to occupy remaining height and pass value in fit-content with min-height for header and footer */
