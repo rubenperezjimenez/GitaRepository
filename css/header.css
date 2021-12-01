@@ -1,0 +1,57 @@
+.headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo img {
+    width: 150px;
+}
+
+.headerMenu {
+    width: 100%;
+    border-bottom: black solid 1px; 
+}
+
+.headerMenu ul {
+    display: inline-flex;
+    justify-content: space-between;
+    list-style:none;
+    margin: 0;
+}
+
+.headerMenu ul li {
+    display: inline-flex;
+    padding: 0px 20px 0px 20px ;  
+    list-style: none;      
+}
+/*.headerContainer {
+    position: fixed;
+    /*padding: 10px 10px 10px 10px;* /
+    top: 0;
+    right:0;
+    width: 100%;    
+    border-bottom: black solid 1px; 
+    display: grid;
+    grid-template-columns: repeat (6, 1fr);
+    /*grid-template-rows: 3fr 3fr; * /
+    column-gap: 0px;
+    row-gap: 0px;
+    grid-template-areas:
+        "email social languages about"
+        /* No es correcto que un mismo elemento ocupe todas las columnas de una misma fila, a menos que ocupe otra columna en otra fila generando una forma de L * /
+    
+}
+*/
+@media screen and (max-width: 800px){
+    .headerMenu ul {
+        flex-direction: column; 
+        font-size: small;          
+    }
+    .headerLogo img {
+        display: none;
+    }
+    
+    .headerLogo h1 {
+        font-size:larger;
+    }
+}

@@ -1,0 +1,26 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Cpm border-box, los valores en porcentaje tienen en cuenta
+    el margin y padding para hacer el calculo. Si no, calculan
+    el ancho total MAS estas dos propiedades generando contenedores
+    mas anchos de lo que queremos. */
+    box-sizing: border-box;
+}
+
+html {
+    height:100%;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;    
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+

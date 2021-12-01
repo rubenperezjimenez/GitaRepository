@@ -1,0 +1,56 @@
+
+.Principal {
+    display: grid;
+    /*border:solid;*/
+    grid-template-columns: 2fr 4fr;
+    /*grid-template-rows: fit-content(8rem);   */
+    grid-template-areas: "izquierda derecha";
+    text-align: center;    
+   
+}
+.Izquierda{
+    /*border:solid;*/
+    border:solid;
+    grid-area: izquierda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+
+.Derecha{
+    /*border:solid;*/
+    grid-area: derecha;
+    border:solid;  
+    display: flex; 
+       justify-content: center;
+    align-items: center;
+    width: 100%;
+    object-fit:fill;
+    overflow: hidden;
+   
+}
+
+.main-body{
+    display: grid;
+    /* let content auto to occupy remaining height and pass value in fit-content with min-height for header and footer */
+    grid-template-rows: fit-content(8rem) auto fit-content(8rem);
+    grid-template-areas: "header" "main" "footer";    
+}
+
+.main-header{
+    grid-area: header;
+    border:solid;
+}
+
+.main-content{
+    grid-area: main;
+/*    justify-self:center;
+    align-self: center; */
+    border:solid red; 
+}
+
+.main-footer{
+    grid-area: footer;    
+    border:solid;
+}

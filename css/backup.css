@@ -85,25 +85,27 @@ a {
 
     width: 100%;    
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: 3fr 3fr;
-    column-gap: 0px;
-    row-gap: 0px;
+   
     grid-template-areas:
-        "email social languages about"
-        "copyRight copyRight copyRight copyRight";
-}
+        "email social languages about newsletter"
+        "copyRight copyRight copyRight copyRight copyRight"
+}   
 
 .box {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    border:solid;
 }
 
 .Email {
     grid-area: email;
 }
 
+.Suscribe {
+    display:grid;
+    grid-area: newsletter;
+}
 .AboutUs {
     grid-area: about;
 }
@@ -139,15 +141,19 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:30px;
 }
 
 .Derecha{
     /*border:solid;*/
     grid-area: derecha;
     border:solid;  
-    display: flex;
-    justify-content: center;
+    display: flex; 
+       justify-content: center;
     align-items: center;
+    width: 100%;
+    object-fit: fill;
+    overflow: hidden;
    
 }
 

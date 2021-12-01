@@ -1,0 +1,55 @@
+.footerContainer {
+    /*position: fixed;*/
+    /*padding: 10px 10px 10px 10px;*/
+
+    width: 100%;    
+    display: grid;
+   
+    grid-template-areas:
+        "email social languages about newsletter"
+        "copyRight copyRight copyRight copyRight copyRight"
+}   
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid;
+}
+
+.Email {
+    grid-area: email;
+}
+
+.Suscribe {
+    display:grid;
+    grid-area: newsletter;        
+} 
+
+.AboutUs {
+    grid-area: about;
+}
+
+.Social {
+    grid-area: social;
+    justify-content:space-evenly;
+}
+
+.Copyright {
+    grid-area: copyRight;
+        
+}
+
+.Languages {
+    display:grid;    
+    grid-area: languages;
+}
+
+@media screen and (max-width: 800px){
+    .box {
+        font-size:x-small;          
+    }
+    .Suscribe {
+        display: none;
+    }
+}
