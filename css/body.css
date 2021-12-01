@@ -10,7 +10,7 @@
 }
 .Izquierda{
     /*border:solid;*/
-    border:solid;
+    border:none;
     grid-area: izquierda;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
 .Derecha{
     /*border:solid;*/
     grid-area: derecha;
-    border:solid;  
+    border:none;  
     display: flex; 
        justify-content: center;
     align-items: center;
@@ -40,17 +40,19 @@
 
 .main-header{
     grid-area: header;
-    border:solid;
+    border:none;
 }
 
 .main-content{
     grid-area: main;
 /*    justify-self:center;
     align-self: center; */
-    border:solid red; 
+    border:none; 
 }
 
 .main-footer{
     grid-area: footer;    
-    border:solid;
+    border:none;
+    border-top: solid 1px ;
+    margin:10px;
 }

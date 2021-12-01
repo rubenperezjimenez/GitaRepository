@@ -7,9 +7,14 @@
     width: 150px;
 }
 
+.headerLogo h1{
+    font-weight: bolder;
+}
+
 .headerMenu {
-    width: 100%;
+    width: 98%;
     border-bottom: black solid 1px; 
+    margin:10px;
 }
 
 .headerMenu ul {
@@ -23,6 +28,7 @@
     display: inline-flex;
     padding: 0px 20px 0px 20px ;  
     list-style: none;      
+    font-weight: bolder;
 }
 /*.headerContainer {
     position: fixed;
