@@ -26,9 +26,20 @@
 
 .headerMenu ul li {
     display: inline-flex;
+    
     padding: 0px 20px 0px 20px ;  
     list-style: none;      
     font-weight: bolder;
+}
+
+.headerMenu ul li a {
+
+transition: all 1s ;
+}
+.headerMenu ul li :hover{
+    padding:0 40px 0 40px;
+    transform: scale(1.5, 1.5);
+    background-color: blueviolet;
 }
 /*.headerContainer {
     position: fixed;

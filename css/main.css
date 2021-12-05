@@ -24,3 +24,26 @@ a {
     text-decoration: none;
 }
 
+.grad{
+    background-image: linear-gradient(to right,white,  red , yellow, blue);
+
+}
+
+h1 {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

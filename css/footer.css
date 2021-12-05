@@ -36,6 +36,15 @@
     justify-content:space-evenly;
 }
 
+.Social a img{
+    transition: all 1s;
+}
+
+.Social a :hover{
+    /*transform: scale(1.5, 1.5);*/
+    width: 40px;
+}
+
 .Copyright {
     grid-area: copyRight;
         
